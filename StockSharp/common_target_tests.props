@@ -1,0 +1,15 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="common_target_net.props" />
+  <PropertyGroup>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <TargetFrameworks>net8.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ecng.UnitTesting" Version="$(EcngVer)" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MsTestSdkVer)" />
+    <PackageReference Include="MSTest.TestAdapter" Version="$(MsTestVer)" />
+    <PackageReference Include="MSTest.TestFramework" Version="$(MsTestVer)" />
+    <PackageReference Include="StockSharp.Samples.HistoryData" Version="$(StockSharpVer)" />
+  </ItemGroup>
+</Project>
