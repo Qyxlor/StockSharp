@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\common_target_standard.props" />
+  <PropertyGroup>
+    <ProjectGuid>{2CFF1903-4EF5-46F8-AB5D-BB623CA75CE6}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Messages\Messages.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Configuration" Version="$(NuGetApiVer)" />
+    <PackageReference Include="Ecng.Configuration" Version="$(EcngVer)" />
+  </ItemGroup>
+</Project>
